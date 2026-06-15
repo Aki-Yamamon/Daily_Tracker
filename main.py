@@ -6,7 +6,7 @@ app = FastAPI()
 # 「http://.../」にGET通信が来たら、下の関数を実行するという名札（デコレータ）
 @app.get("/")
 def read_root():
-    return {"message":"Hello, Tracker App!"}
+    return {"message":"Hello to the WSL CLI"}
 
 # 自分のトラッカ用お試しAPI(POSTリクエスト)
 @app.post("/tracker")
