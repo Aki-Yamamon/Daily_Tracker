@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String
 # クラスをインポート
-from database import Base 
+from .database import Base 
+
 
 # DBの設定
 class Record(Base):
@@ -9,5 +10,5 @@ class Record(Base):
     id = Column(Integer, primary_key=True, index=True)
 
     # --- オリジナルカラム ---
-    action = Column(String, String, index=True)
+    action = Column( String, index=True)
     emotion_score = Column(Integer)

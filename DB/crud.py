@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-import models
-import schemas as schemas
+from . import models
+from . import schemas as schemas
 
 # --- Read --- データの取得する関数 (すべてのデータ)
 def get_records(db: Session):
